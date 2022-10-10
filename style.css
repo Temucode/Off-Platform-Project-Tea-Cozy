@@ -76,11 +76,13 @@ body {
 .col{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .col .cards p {
   display: flex;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 .bottom {
@@ -98,6 +100,12 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 15px
+}
+
+#left, #middle, #right{
+  background-color: black;
+  width: 300px;
+  text-align: center;
 }
 
 .contact {
