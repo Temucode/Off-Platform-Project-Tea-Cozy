@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
@@ -7,36 +13,50 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0px;
   width: 100%;
-  height: 69px;;
-  padding: 50xp;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  box-sizing: border-box;
+  background-color: black;
 }
 
 .header .logo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 8.5px 0px 8.5px 10px;
+  padding: 10px;
 }
+
 .header .navbar ul {
   display: flex;
 }
 
 .header .navbar ul li {
   margin: 0 20px;
+  list-style: none;
+}
+
+.header .navbar ul li a {
+  transition: all 0.3s ease 0s;
+  margin: 0 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header .navbar ul li a:hover {
+  color: #0088a9;
 }
 
 .top {
   background-image: url(img-mission-background.jpeg);
   height: 700px;
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
 }
 
 #mission {
@@ -44,13 +64,7 @@ body {
   justify-content: center;
 }
 
-@media screen and (max-width: 800px) {
-  .navbar {
-
-  }
-}
-
-.container {
+.container-main {
   text-align: center;
 }
 
@@ -66,13 +80,14 @@ body {
 
 .col .cards p {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .bottom {
   background-image: url(img-locations-background.jpeg);
   height: 500px;
-  width: 1200px;
+  background-position: center;
+  padding-top: 80px;
 }
 
 #locations {
@@ -82,8 +97,7 @@ body {
 .bottom .cards {
   display: flex;
   justify-content: space-around;
-  text-align: center;
-  background-color: black;
+  padding-top: 15px
 }
 
 .contact {
